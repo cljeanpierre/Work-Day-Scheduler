@@ -26,15 +26,14 @@ $(document).ready(function () {
 
     hourUpdater();
 
-//     //set an interval for the hourupdater function
-//     //time for one hour is 15000ms
-//     var interval = setInterval(hourUpdater, 1500);
-//         function hourUpdater() {
-//             var date = moment().year(year).month(month).date(day);
-//             var time = moment().hour(Number);
-//             document.getElementById("currentDay").innerHTML = time;
-//         }
-// }
+    //set an interval for the hourupdater function
+    
+    setInterval(function() {
+           var date = moment().year(year).month(month).date(day);
+           var time = moment().hour(Number);
+           document.getElementById("currentDay").innerHTML = time;
+       }, 3000)
+
 
     //make a saveBtn click function
     //grab the values from time blocks
